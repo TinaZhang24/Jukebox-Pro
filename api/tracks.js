@@ -24,7 +24,6 @@ router.get("/:id", async (req, res, next) => {
       where: { id: +id },
       include: {
         playlists: true,
-        users: true,
       },
     });
     if (track) {
